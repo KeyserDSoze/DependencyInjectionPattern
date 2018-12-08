@@ -23,7 +23,7 @@ namespace DependencyInjectionPattern.Interfaces.Customer
         public virtual void Subscribe(int? id = null)
         {
             if (id != null) this.id = (int)id;
-            if (this.id == 0) return;
+            if (this.id == 0) { Console.WriteLine("no id found"); return; }
             this.subscription.Subscribe();
             this.log.Save();
         }
