@@ -5,9 +5,16 @@ using System.Text;
 
 namespace DependencyInjectionPattern.Interfaces.Customer.Subscription
 {
+    /// <summary>
+    /// Abstraction for every implementation of Subscription and Api
+    /// </summary>
     public abstract class ASubscription
     {
         private IApi api;
+        /// <summary>
+        /// Dependency injection for IApi
+        /// </summary>
+        /// <param name="api">Interface for Dependency Injection</param>
         public ASubscription(IApi api)
         {
             this.api = api;

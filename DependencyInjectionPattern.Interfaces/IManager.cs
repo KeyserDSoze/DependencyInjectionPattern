@@ -8,6 +8,9 @@ using System.Text;
 
 namespace DependencyInjectionPattern.Interfaces
 {
+    /// <summary>
+    /// Interface that group every DI
+    /// </summary>
     public interface IManager
     {
         IConfigurationData ConfigurationData { get; }

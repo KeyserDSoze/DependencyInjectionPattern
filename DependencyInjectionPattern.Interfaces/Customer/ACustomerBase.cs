@@ -7,6 +7,9 @@ using System.Text;
 
 namespace DependencyInjectionPattern.Interfaces.Customer
 {
+    /// <summary>
+    /// Abstraction for Customer Base
+    /// </summary>
     public abstract class ACustomerBase
     {
         private int id;
